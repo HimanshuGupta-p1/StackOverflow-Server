@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import User from '../models/auth.js'
+import nodemailer from 'nodemailer'
 
 export const getAllUsers = async(req, res) => {
     try {

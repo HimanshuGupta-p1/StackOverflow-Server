@@ -9,4 +9,5 @@ router.post('/login', login)
 router.get('/getAllUsers',getAllUsers)
 router.patch('/update/:id',auth, updateProfile)
 
+
 export default router 
