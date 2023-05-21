@@ -11,7 +11,10 @@ const userSchema = mongoose.Schema({
     otp:{
         type:String,
         // required:true
-    }
+    },
+    accountType: {type: String, default:"free",require:true},
+    noOfQues : {type:Number, require: true, default:0},
+    dateAsked : {type:Date, require:true, default:Date.now()}
 })
 
 export default mongoose.model("User", userSchema)

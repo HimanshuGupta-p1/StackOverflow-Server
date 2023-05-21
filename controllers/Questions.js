@@ -11,10 +11,12 @@ dotenv.config()
 
 export const AskQuestion = async (req, res) => {
     const postQuestionData = req.body;
+    // const {userId, noOfQues, dateAsked} = req.body;
     const postQuestion = new Questions(postQuestionData)
+
     try {
         await postQuestion.save();
-        res.status(200).json("Posted a question successfully")
+        res.status(200).json('Question posted successfully')
     } catch (error) {
         console.log(error)
         res.status(400).json("Couldn't post a new question")
