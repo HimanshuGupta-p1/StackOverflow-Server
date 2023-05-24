@@ -7,6 +7,9 @@
   "scripts": {
     "start": "nodemon index.js"
   },
+  "engines": {
+    "node": ">=14 <15"
+  },
   "author": "Himanshu Gupta",
   "license": "ISC",
   "dependencies": {
