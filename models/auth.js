@@ -12,6 +12,11 @@ const userSchema = mongoose.Schema({
         type:String,
         // required:true
     },
+    friends: {
+        type: Array,
+        default: [],
+        require: true,
+      },
     accountType: {type: String, default:"free",require:true},
     noOfQues : {type:Number, require: true, default:0},
     dateAsked : {type:Date, require:true, default:Date.now()}
