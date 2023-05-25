@@ -46,7 +46,7 @@ export const paymentVerification = async (req, res) => {
       razorpay_signature,
     });
     res.redirect(
-      'http://localhost:3000/'
+      'https://stack-overflow-p1.netlify.app/'
     );
   } else {
     const {id : _id} = req.params;
